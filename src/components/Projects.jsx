@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Trophy, Rocket, Brain } from 'lucide-react';
+import { ExternalLink, Github, Trophy, Rocket, Brain, Swords, Gamepad2 } from 'lucide-react';
 
 const ProjectCard = ({ project, index }) => {
     return (
@@ -71,7 +71,16 @@ const Projects = () => {
             description: "Videojuego sobre un astronauta diseñado para combatir la falta de concentración mediante mecánicas de atención sostenida.",
             tech: ["Unity", "C#", "Game Design"],
             achievement: "NASA Space Apps",
-            icon: <Gamepad2 className="w-5 h-5 text-accent" />, // Need to import Gamepad2
+            icon: <Gamepad2 className="w-5 h-5 text-accent" />,
+            className: "md:col-span-1 md:row-span-1 min-h-[200px]"
+        },
+        {
+            title: "CHAOSPORTS",
+            category: "Fullstack / E-commerce",
+            description: "Plataforma web de catálogo para una tienda de artes marciales. Incluye sistema de categorías, vista de productos y contacto vía WhatsApp.",
+            tech: ["React", "Node.js", "Tailwind"],
+            achievement: "Proyecto Freelance",
+            icon: <Swords className="w-5 h-5 text-accent" />,
             className: "md:col-span-1 md:row-span-1 min-h-[200px]"
         }
     ];
@@ -98,8 +107,5 @@ const Projects = () => {
         </section>
     );
 };
-
-// Need to import Gamepad2 again since it's used in the array but not imported
-import { Gamepad2 } from 'lucide-react';
 
 export default Projects;
