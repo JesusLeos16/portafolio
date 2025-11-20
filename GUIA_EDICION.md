@@ -52,3 +52,23 @@ El color principal (Rojo) está definido como `accent` en la configuración de T
 - **Archivo:** `src/components/Footer.jsx`
 - **Líneas 20-31:** Busca las etiquetas `<a>` y cambia el `href="#"` por tus enlaces reales.
     - Ejemplo: `href="https://github.com/tuusuario"`
+
+## 5. Cambiar Imagen de Perfil (About Me)
+
+Actualmente, la sección "Sobre Mí" muestra un recuadro con el texto "DEV". Para poner tu foto real:
+
+1.  Guarda tu foto (ej. `mifoto.jpg`) en la carpeta `public/` del proyecto.
+2.  Abre el archivo `src/components/About.jsx`.
+3.  Busca las líneas 36-41 (el bloque `div` que contiene el texto "DEV").
+4.  Reemplaza todo ese bloque `div` por una etiqueta de imagen:
+
+```javascript
+<div className="aspect-square rounded-2xl overflow-hidden border border-white/10 relative group">
+  <img 
+    src="/mifoto.jpg" 
+    alt="Jesus Enrique Leos Morones" 
+    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+  />
+  <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+</div>
+```
