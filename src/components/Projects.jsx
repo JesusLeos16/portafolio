@@ -60,7 +60,7 @@ const Projects = () => {
             description: "API que reemplaza el OAuth tradicional permitiendo autenticación descentralizada mediante billeteras digitales. Devuelve el control de la identidad al usuario.",
             tech: ["Web3", "SIWE", "Blockchain API"],
             achievement: "2do Lugar - Ethereum Mexico 2025",
-            image: "public/unipont.png",
+            image: "/unipont.png",
             icon: <Rocket className="w-5 h-5 text-accent" />,
             className: "md:col-span-2 md:row-span-2 min-h-[400px]"
         },
@@ -70,7 +70,7 @@ const Projects = () => {
             description: "Sistema de economía escolar digital con moneda imaginaria 'Zippy' para premiar el desempeño académico.",
             tech: ["Economía Digital", "Gamificación", "Web Dev"],
             achievement: "4to Lugar - MIT-ICATECH",
-            image: "public/zippy.png",
+            image: "/zippy.png",
             icon: <Brain className="w-5 h-5 text-accent" />,
             className: "md:col-span-1 md:row-span-1 min-h-[200px]"
         },
@@ -80,7 +80,7 @@ const Projects = () => {
             description: "Videojuego sobre un astronauta diseñado para combatir la falta de concentración mediante mecánicas de atención sostenida.",
             tech: ["Unity", "C#", "Game Design"],
             achievement: "NASA Space Apps",
-            image: "public/yuyin.png",
+            image: "/yuyin.png",
             icon: <Gamepad2 className="w-5 h-5 text-accent" />,
             className: "md:col-span-1 md:row-span-1 min-h-[200px]"
         },
@@ -91,7 +91,7 @@ const Projects = () => {
             tech: ["React", "Node.js", "Tailwind"],
             achievement: "Proyecto Freelance",
             achievementIcon: <ShoppingBag className="w-4 h-4" />,
-            image: "public/chaosp.png",
+            image: "/chaosp.png",
             icon: <Swords className="w-5 h-5 text-accent" />,
             className: "md:col-span-1 md:row-span-1 min-h-[200px]"
         }
