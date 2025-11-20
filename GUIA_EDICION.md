@@ -32,10 +32,17 @@ Copia y pega el siguiente bloque dentro de los corchetes `[]` de la lista `proje
   description: "Descripción breve del proyecto.",
   tech: ["Tecnología 1", "Tecnología 2"],
   achievement: "Logro o Premio (Opcional)",
+  tech: ["Tecnología 1", "Tecnología 2"],
+  achievement: "Logro o Premio (Opcional)",
+  image: "/nombre-imagen.jpg", // Opcional: Agrega una imagen en la carpeta public
   icon: <Rocket className="w-5 h-5 text-accent" />, // Cambia 'Rocket' por otro icono si deseas
   className: "md:col-span-1 md:row-span-1 min-h-[200px]"
 },
 ```
+
+**Para agregar imagen:**
+1. Guarda la imagen en la carpeta `public/`.
+2. Agrega la propiedad `image: "/tu-imagen.jpg"` al objeto del proyecto.
 
 **Nota:** Si usas un icono nuevo, asegúrate de importarlo al inicio del archivo desde `lucide-react`.
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Trophy, Rocket, Brain, Swords, Gamepad2 } from 'lucide-react';
+import { ExternalLink, Github, Trophy, Rocket, Brain, Swords, Gamepad2, ShoppingBag } from 'lucide-react';
 
 const ProjectCard = ({ project, index }) => {
     return (
@@ -11,7 +11,14 @@ const ProjectCard = ({ project, index }) => {
             transition={{ delay: index * 0.1 }}
             className={`relative group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-accent/50 transition-colors ${project.className || ''}`}
         >
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 z-10" />
+            {project.image && (
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-40"
+                />
+            )}
             <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
 
             <div className="relative z-20 p-6 h-full flex flex-col justify-end">
@@ -35,7 +42,7 @@ const ProjectCard = ({ project, index }) => {
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
                     {project.achievement && (
                         <div className="flex items-center gap-2 text-yellow-400 text-sm font-medium">
-                            <Trophy className="w-4 h-4" />
+                            {project.achievementIcon || <Trophy className="w-4 h-4" />}
                             {project.achievement}
                         </div>
                     )}
@@ -53,6 +60,7 @@ const Projects = () => {
             description: "API que reemplaza el OAuth tradicional permitiendo autenticación descentralizada mediante billeteras digitales. Devuelve el control de la identidad al usuario.",
             tech: ["Web3", "SIWE", "Blockchain API"],
             achievement: "2do Lugar - Ethereum Mexico 2025",
+            image: "public/unipont.png",
             icon: <Rocket className="w-5 h-5 text-accent" />,
             className: "md:col-span-2 md:row-span-2 min-h-[400px]"
         },
@@ -80,6 +88,7 @@ const Projects = () => {
             description: "Plataforma web de catálogo para una tienda de artes marciales. Incluye sistema de categorías, vista de productos y contacto vía WhatsApp.",
             tech: ["React", "Node.js", "Tailwind"],
             achievement: "Proyecto Freelance",
+            achievementIcon: <ShoppingBag className="w-4 h-4" />,
             icon: <Swords className="w-5 h-5 text-accent" />,
             className: "md:col-span-1 md:row-span-1 min-h-[200px]"
         }
