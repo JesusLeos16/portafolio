@@ -13,16 +13,38 @@ const Footer = () => {
                 </p>
 
                 <div className="flex gap-6 mb-12">
-                    <a href="#" className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group">
+                    <a
+                        href="mailto:jelm060716@gmail.com"
+                        className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group"
+                        aria-label="Email"
+                    >
                         <Mail className="w-6 h-6" />
                     </a>
-                    <a href="#" className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group">
+                    <a
+                        href="https://github.com/JesusLeos16"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group"
+                        aria-label="GitHub"
+                    >
                         <Github className="w-6 h-6" />
                     </a>
-                    <a href="#" className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group">
+                    <a
+                        href="https://www.linkedin.com/in/jesús-enrique-leos-morones-bb069231a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group"
+                        aria-label="LinkedIn"
+                    >
                         <Linkedin className="w-6 h-6" />
                     </a>
-                    <a href="#" className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group">
+                    <a
+                        href="https://x.com/jeusLeos16"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-4 rounded-full bg-white/5 hover:bg-accent hover:text-white transition-all hover:scale-110 group"
+                        aria-label="X (Twitter)"
+                    >
                         <Twitter className="w-6 h-6" />
                     </a>
                 </div>
