@@ -217,8 +217,8 @@ const Projects = () => {
             image: "/chaosp.png",
             icon: <Swords className="w-5 h-5 text-accent" />,
             className: "md:col-span-1 md:row-span-1 min-h-[200px]",
-            repoLink: "https://github.com",
-            demoLink: "https://demo.com"
+            repoLink: "https://github.com/JesusLeos16/chaoshop",
+            demoLink: "https://chaoshop.vercel.app/"
         }
     ];
 
